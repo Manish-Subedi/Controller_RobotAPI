@@ -1,13 +1,7 @@
-//===============================================================
-//系统设置
-
 #define		CRYSTAL_FREQUENCE		72000000UL			//Hz
 
 #define		SYS_TICK            	5					//ms
 #define		UART1_BAUD_RATE			9600
-
-//===============================================================
-//位带操作
 
 #define BITBAND(addr, bitnum) ((addr & 0xF0000000)+0x2000000+((addr &0xFFFFF)<<5)+(bitnum<<2)) 
 #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
@@ -49,13 +43,6 @@
 
 #define PGout(n)   BIT_ADDR(GPIOG_ODR_Addr,n)  
 #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n) 
-
-//===============================================================
-//端口定义
-
-
-//===============================================================
-//定时值
 
 #define		_5ms					5   / SYS_TICK
 #define		_10ms					10   / SYS_TICK
