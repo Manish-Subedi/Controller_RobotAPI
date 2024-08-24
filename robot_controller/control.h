@@ -2,12 +2,7 @@
 #define __CONTROL_H
 #include "sys.h"
 
-  /**************************************************************************
-作者：墨比斯科技
-我的淘宝小店：https://moebius.taobao.com/
-**************************************************************************/
-#define PI 3.14159265
-#define ZHONGZHI 0 
+#define PI 3.14159265 
 #define DIFFERENCE 100
 
 typedef struct {
@@ -33,7 +28,7 @@ void Motors_reset(void);
 void Update_PI(void);
 void Motor_reset(Motor_PI * motor);
 void enable_rotation(int pwm);
-	#if 0
+#if 0
 int Incremental_PI_A (int Encoder,long *Target);
 int Incremental_PI_B (int Encoder,long *Target);
 int Incremental_PI_C (int Encoder,long *Target);
